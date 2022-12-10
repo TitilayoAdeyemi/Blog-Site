@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content%} 
+<h1>Blog Posts!</h1>
+
+{% for post in posts%}
+<div>
+    {{post.title}}
+</div>
+<div>
+    {{post.post}}
+</div>
+
+    {%endfor%}
+{% endblock %}
